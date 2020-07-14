@@ -1,0 +1,32 @@
+<h1>Yum Yum in my Tum Tum</h1>
+
+<ul>
+    <h2>Burgers:</h2>
+    {{#each burgerKey}}
+    <li>{{ burger_name }} <button class="delete-btn">Devour!</button></li>
+    {{/each}}
+</ul>
+
+
+<h3>Add a burger</h3>
+<form id="addburgerForm">
+    <input type="text" id="burgerName" />
+    <button type="submit">Add a Burger</button>
+</form>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#addburgerForm").on("submit", function (event) {
+            event.preventDefault();
+
+            let newBurgerObj = {
+                burger_name: $("#burgerName").val().trim()
+            }
+
+            $.post("/api/burgers", newBurgerObj)
+                .then(function () {
+                    location.reload();
+                });
+    });
+});
+</script>
