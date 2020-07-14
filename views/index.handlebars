@@ -1,32 +1,35 @@
-<h1>Yum Yum in my Tum Tum</h1>
+<h1>Burger Yum!</h1>
+
+<h2>Ready to eat burgers!</h2>
 
 <ul>
-    <h2>Burgers:</h2>
-    {{#each burgerKey}}
-    <li>{{ burger_name }} <button class="delete-btn">Devour!</button></li>
+    {{#each burgers}}
+    {{#unless devoured}}
+    <li data-id="{{id}}" data-newBurger="{{burger_name}}">{{burger_name}}
+        <button class="devoured" data-id="{{id}}" data-newdevour="{{devour}}">Devour!
+        </button>
+    </li>
+    {{/unless}}
     {{/each}}
 </ul>
 
+<h2>Devoured Burgers!</h2>
 
-<h3>Add a burger</h3>
-<form id="addburgerForm">
-    <input type="text" id="burgerName" />
-    <button type="submit">Add a Burger</button>
+<ul>
+    {{#each burgers}}
+    {{#if devoured}}
+    <li data-id="{{id}}" data-newBurger="{{burger_name}}">{{burger_name}}</li>
+    {{/if}}
+    {{/each}}
+</ul>
+
+<h2>Add a Burger</h2>
+<form class="create-form">
+
+    <div class="form-group">
+        <label for="BurgerName">Burger Name:</label>
+        <input type="text" id="addBurgerId" name="BurgerName">
+    </div>
+
+    <button type="submit">Add Burger</button>
 </form>
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#addburgerForm").on("submit", function (event) {
-            event.preventDefault();
-
-            let newBurgerObj = {
-                burger_name: $("#burgerName").val().trim()
-            }
-
-            $.post("/api/burgers", newBurgerObj)
-                .then(function () {
-                    location.reload();
-                });
-    });
-});
-</script>
