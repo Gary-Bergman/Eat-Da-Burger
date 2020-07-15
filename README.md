@@ -3,6 +3,13 @@
   
   ## Deployed
 
+
+  ![Eat Da Burger gif](public/assets/img/eatDaBurger.gif)
+
+  
+  [MP4 Demo](https://drive.google.com/file/d/1Xm44GtqejrHqqBurduhdXnINaGhWtIwP/view?usp=sharing)
+
+
   [Deployed Link](https://eat-da-burger-great.herokuapp.com/)
   
   ## Description
