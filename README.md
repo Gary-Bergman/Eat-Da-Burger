@@ -14,7 +14,7 @@
   
   ## Description
 
-  For this project, I created a Bob's Burgers logger with MySQL, Node, Express, Handlebars and a homemade ORM. Following the MVC design pattern (Model, View, Control) and using an organized file structure, I was able to create a an application with a lot of moving pieces and bridge the gap from back-end to front. I used Node and MySQL to query and route data in my app, and Handlebars to generate the HTML.
+  For this project, I created a Bob's Burgers logger with MySQL, Node, Express, Handlebars and a homemade ORM. Following the MVC design pattern (Model, View, Control) and using an organized file structure, I was able to create an application with a lot of moving pieces and bridge the gap from back-end to front. I used Node and MySQL to query and route data in my app, and Handlebars to generate the HTML.
 
   ## Table of Contents
 
