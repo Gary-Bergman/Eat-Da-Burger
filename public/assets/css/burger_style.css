@@ -7,23 +7,16 @@ h1 {
     text-align: center;
 }
 
-
 .card {
     color: #dc0700;
     margin-left: 30%;
     background-color: #fff055 !important;
-    /* opacity: .5; */
 }
 
 div.card {
     border: solid  #dc0700 5px;
     border-radius: 25px;
 }
-
-/* h2.card-title {
-    opacity: 200%;
-} */
-
 
 li {
     padding: 5px;
@@ -54,30 +47,28 @@ li {
     color:  #fff055;
 }
 
+#button {
+    border-radius: 25px;
+    background-color: #dc0700;
+    color:  #fff055;
+}
+
 .center {
     text-align: center;
 }
-/* 
-footer {
-    padding-top: 50px;
-    text-align: center;
-} */
+
 
 body {
     background-image: url(/assets/img/BobsBurgers.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    
 }
   
-
 .top {
     margin-top: 0;
 }
 
 .card-group {
-    /* margin: auto; */
     margin-top: 2%;
-    /* margin-bottom: 50%; */
 }
