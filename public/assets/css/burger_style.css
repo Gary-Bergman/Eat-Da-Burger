@@ -1,20 +1,83 @@
+h1 {
+    margin-left: 40%;
+    background-color: #dc0700;
+    color: #fff055;
+    max-width: 50%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+
+.card {
+    color: #dc0700;
+    margin-left: 30%;
+    background-color: #fff055 !important;
+    /* opacity: .5; */
+}
+
+div.card {
+    border: solid  #dc0700 5px;
+    border-radius: 25px;
+}
+
+/* h2.card-title {
+    opacity: 200%;
+} */
+
+
 li {
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    font-weight: 600;
+    
   }
   
-  .label {
-    font-weight: bold;
-  }
+#add {
+    font-weight: 600;
+}
   
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
   
-  .form-group {
+.form-group {
     margin-bottom: 5px;
-  }
+}
+
+.displayed {
+    display: block;
+    margin: auto;
+    height: auto;
+    max-width: 40%;
+}
+
+.devoured {
+    border-radius: 25px;
+    background-color: #dc0700;
+    color:  #fff055;
+}
+
+.center {
+    text-align: center;
+}
+/* 
+footer {
+    padding-top: 50px;
+    text-align: center;
+} */
+
+body {
+    background-image: url(/assets/img/BobsBurgers.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
   
+
+.top {
+    margin-top: 0;
+}
+
+.card-group {
+    /* margin: auto; */
+    margin-top: 2%;
+    /* margin-bottom: 50%; */
+}

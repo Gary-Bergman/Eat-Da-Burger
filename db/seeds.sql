@@ -3,7 +3,7 @@
 USE burgers_db;
 
 INSERT INTO burgers (burger_name) 
-VALUES ('Big Mac'), ('Royale with Cheese'), ('Big Kahuna Burger');
+VALUES ('Not If I Can Kelp It Burger'), ('Beets Me Burger'), ('Yes I Cayenne Burger'), ("I'm OK, You're Ok-ra Burger");
 
 INSERT INTO burgers (burger_name, devoured) 
 VALUES ('TestBurgy', TRUE);

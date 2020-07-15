@@ -1,35 +1,66 @@
-<h2>Burger Yum!</h2>
-
-<h2>Ready to eat burgers!</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    <li data-id="{{id}}" data-newBurger="{{burger_name}}">{{burger_name}}
-        <button class="devoured" data-id="{{id}}" data-newdevour="{{devour}}">Devour!
-        </button>
-    </li>
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Devoured Burgers!</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    <li data-id="{{id}}" data-newBurger="{{burger_name}}">{{burger_name}}</li>
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
-
-    <div class="form-group">
-        <label for="BurgerName">Burger Name:</label>
-        <input type="text" id="addBurgerId" name="BurgerName">
+<main class="container p-3 fit">
+    <div class="header">
+        <h1>Eat Da Burger!</h1>
+        {{!-- 
+        <figure>
+            <img class="displayed" src="/assets/img/burger.png">
+        </figure> --}}
     </div>
 
-    <button type="submit">Add Burger</button>
-</form>
+
+    <!-- I used a lot of semantic html though maybe divs would be more appropriate for some of these section and figure tags -->
+    {{!-- <section class="m-sm-5 p-3  card">
+        <section class="card-body"> --}}
+    <div class="card-group">
+        {{!-- Ready to eat --}}
+        <div class="card">
+            <section class="card-body">
+                <h2 id="solid" class="card-title">Ready to eat burgers!</h2>
+                <hr class="my-4">
+                <section class="row">
+                    <ul>
+                        {{#each burgers}}
+                        {{#unless devoured}}
+                        <li data-id="{{id}}" data-newBurger="{{burger_name}}">{{burger_name}}
+                            <button class="devoured" data-id="{{id}}" data-newdevour="{{devour}}">Devour!
+                            </button>
+                        </li>
+                        {{/unless}}
+                        {{/each}}
+                    </ul>
+                </section>
+            </section>
+        </div>
+
+        {{!-- Devoured --}}
+        <div class="card">
+            <section class="card-body">
+                <h2 class="card-title">Devoured Burgers!</h2>
+                <hr class="my-4">
+                <section class="row">
+                    <ul>
+                        {{#each burgers}}
+                        {{#if devoured}}
+                        <li data-id="{{id}}" data-newBurger="{{burger_name}}">{{burger_name}}</li>
+                        {{/if}}
+                        {{/each}}
+                    </ul>
+                </section>
+            </section>
+        </div>
+    </div>
+
+    <div class="card center top">
+        <h2 class="card-title">Add a Burger</h2>
+        <form class="create-form  ">
+            <label id="add" for="BurgerName">Burger Name:</label>
+            <input type="text" id="addBurgerId" name="BurgerName">
+            <button  class="devoured" type="submit">Add Burger</button>
+        </form>
+    </div>
+
+</main>
+
+{{!-- <footer>
+    <h6>That was a tasty burger!</h6>
+</footer> --}}
