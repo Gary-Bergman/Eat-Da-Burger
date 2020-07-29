@@ -20,7 +20,7 @@
 
   *  [Deployed](#Deployed)
 
-  *  [Description](#Descriptiojn)
+  *  [Description](#Description)
 
   *  [Installation](#Installation)
 
